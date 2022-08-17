@@ -1,0 +1,213 @@
+.container-rektor,
+.container-ilmiyprorektor,
+.container-moliyaprorektor {
+  display: flex;
+  justify-content: space-between !important;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  width: 85% !important;
+}
+
+.about-text {
+  width: 100%;
+  padding-left: 5rem;
+  min-width: 100px !important;
+}
+
+.about-text p a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+.about {
+  width: 75%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: left;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.content {
+  text-indent: 2ch;
+}
+
+.photo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 30%;
+  margin: 1rem;
+  border-radius: 10px 0 10px 0;
+  background: linear-gradient(111.67deg, rgba(48, 126, 199, 0.911) 27.45%, rgba(129, 211, 236, 0.623) 228.39%);
+  min-width: 200px;
+}
+
+.photo p,
+.photo a {
+  padding: .1rem;
+  text-decoration: none;
+  color: white !important;
+}
+
+.photo a i,
+.photo p i {
+  margin-left: 35px;
+  color: wheat;
+  padding-right: 10px;
+}
+
+.photo img {
+  width: 100%;
+  border-radius: 10px 0 10px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+.wrapper {
+  width: 95%;
+  min-width: 200px;
+}
+
+.wrapper .parent-tab {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+
+.wrapper .parent-tab label,
+.wrapper .child-tab label {
+  background: linear-gradient(111.67deg, rgba(48, 126, 199, 0.911) 27.45%, rgba(129, 211, 236, 0.623) 228.39%);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 99;
+  transition: all 0.3s ease;
+}
+
+.wrapper .parent-tab label:hover {
+  background: linear-gradient(111.67deg, rgba(48, 126, 199, 0.911) 27.45%, rgba(129, 211, 236, 0.623) 228.39%);
+}
+
+.parent-tab input:checked~label,
+.child-tab input:checked~label {
+  background: #7cb6f0;
+}
+
+.wrapper label span {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.wrapper .child-tab label span {
+  font-size: 17px;
+}
+
+.parent-tab label .icon {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  font-size: 15px;
+  color: #007bff;
+  display: block;
+  background: #fff;
+  border-radius: 50%;
+  text-shadow: 0 -1px 1px #0056b3;
+}
+
+.wrapper .child-tab label .icon {
+  height: 27px;
+  width: 27px;
+}
+
+.parent-tab label .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.parent-tab input:checked~label .icon i:before,
+.child-tab input:checked~label .icon i:before {
+  content: '\f106';
+}
+
+.wrapper .parent-tab .content,
+.wrapper .child-tab .sub-content {
+  max-height: 0px;
+  margin-left: 0 !important;
+  overflow: hidden;
+  background: linear-gradient(111.67deg, rgba(234, 245, 255, 0.911) 27.45%, rgba(124, 196, 218, 0.623) 228.39%);
+  border-radius: 0 0 3px 3px;
+  transition: all 0.4s ease;
+}
+
+.parent-tab input:checked~.content,
+.child-tab input:checked~.sub-content {
+  max-height: 500vh;
+}
+
+.tab-3 input:checked~.content {
+  padding: 15px 20px;
+}
+
+.parent-tab .content p,
+.child-tab .sub-content p {
+  padding: 3px 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.child-tab .sub-content p {
+  font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: none;
+}
+
+@media (max-width: 650px) {
+  .container-rektor {
+    flex-direction: column-reverse !important;
+    width: 100% !important;
+  }
+
+  .about,
+  .photo {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+
+  .photo {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+
+  .about-text {
+    width: 90% !important;
+    margin: 0 auto;
+    padding-left: 1rem !important;
+  }
+}
+
+@media (max-width:350px) {
+  .about-text {
+    margin-left: 1rem !important;
+  }
+
+  .about-text h1 {
+    font-size: 25px !important;
+  }
+}
