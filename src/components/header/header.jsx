@@ -163,7 +163,7 @@ function Header() {
             <ul className="d-flex">
               <li className="header__nav dropdown">
                 <a
-                  className="btn font-weight-bold   dropdown-toggle btn_qabul"
+                  className="header__btn font-weight-bold   dropdown-toggle btn_qabul"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -252,7 +252,7 @@ function Header() {
               </li>
               <li className="header__nav dropdown">
                 <a
-                  className="btn font-weight-bold dropdown-toggle"
+                  className="header__btn font-weight-bold dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -263,7 +263,7 @@ function Header() {
               </li>
               <li className="header__nav dropdown">
                 <a
-                  className="btn font-weight-bold   dropdown-toggle"
+                  className="header__btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -275,7 +275,7 @@ function Header() {
 
               <li className="header__nav dropdown">
                 <a
-                  className="btn font-weight-bold   dropdown-toggle"
+                  className="header__btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -286,7 +286,7 @@ function Header() {
               </li>
               <li className="header__nav dropdown">
                 <a
-                  className="btn font-weight-bold   dropdown-toggle"
+                  className="header__btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -668,7 +668,6 @@ function Header() {
                         <div className="block_name">
                           <h4 className="text-light btn__programar">
                             <button>O'quv dasturlari</button>
-                           
                           </h4>
                         </div>
                       </div>
@@ -769,40 +768,49 @@ function Header() {
                   aria-labelledby="dropdownMenuLink"
                 >
                   <div className="d-flex dropdown-menu p-2 innerDropDown">
-                    <div className="content_block col-5">
-                      <div className="block_top d-flex">
-                        <div className="block_icon">
-                          <img
-                            src={Relation}
-                            className="nav-icons"
-                            alt="icon"
-                          />
-                        </div>
-                        <div className="block_name">
-                          <h4 className="text-light">
-                            {context[lang].header.sixth}
-                          </h4>
-                        </div>
-                      </div>
-                      <div className="block_bottom">
-                        <p className="block_text">
-                          {context[lang].navbarTexts.sixth}
-                        </p>
-                      </div>
-                    </div>
                     <div className="col-7">
                       <ul className="dropdown_list d-flex flex-wrap">
-                        {contactsSc.map((item) => (
-                          <li className="my-2">
-                            <a
-                              className="dropdown-item all_sc"
-                              href={`/page/get/${item.id}`}
-                            >
-                              {item[`section_name_${lang}`]}
-                            </a>
-                          </li>
-                        ))}
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/filial`}
+                          >
+                            {context[lang].underCategory.sixth}
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/filial`}
+                          >
+                            {context[lang].underCategory.sixth}
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/filial`}
+                          >
+                            {context[lang].underCategory.sixth}
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/filial`}
+                          >
+                            {context[lang].underCategory.sixth}
+                          </a>
+                        </li>
                       </ul>
+                    </div>
+                    <div className="content_block col-5">
+                      <div className="block_top d-flex">
+                        <div className="block_icon"></div>
+                      </div>
                     </div>
                   </div>
                 </ul>
