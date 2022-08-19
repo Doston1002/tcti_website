@@ -29,7 +29,7 @@ ul {
 }
 
 a {
-  color: #0350d0 !important;
+  color: #393939 !important;
   text-decoration: none;
 }
 
@@ -124,7 +124,7 @@ a {
 }
 
 .logo_name {
-  color: #0350D0 !important;
+  color: rgb(208, 75, 3) !important;
   margin-left: 10px;
   margin-top: -10px;
 }
@@ -210,14 +210,18 @@ a {
 }
 .header__nav {
   border-color: #393939;
-  margin-left: 5px;
+  
   border-radius: 3px;
-  padding: 5px 12px;
+ padding: 0 5px;
   display: block;
   color: black;
   background: #fff;
 
   transition: all 0.5s ease;
+}
+.header__btn:hover{
+  background-color:#393939;
+  color:#f3f2ee !important;
 }
 
 .header_nav_li:hover {
@@ -2303,9 +2307,9 @@ table {
   padding: 20px 0 !important;
 }
 
-.dropdown-toggle {
+/* .dropdown-toggle {
   color: rgba(51, 121, 183, 0.897) !important;
-}
+} */
 
 .dropdown-item {
   background-color: transparent;
@@ -3600,7 +3604,15 @@ dt {
 /* ==============
   Buttons
 ===================*/
+.header__btn{
+  padding: 12px 20px;
+border:1px solid black;
+color: #393939 !important;
+  border-radius: 3px;
+  font-size: 15px;
+}
 .btn {
+  color:#393939 !important;
   border-radius: 3px;
   font-size: 10px;
 }
@@ -5996,17 +6008,18 @@ ul.show {
 }
 .btn__programar{
   margin: 0 10px;
-  background-color: #000;
+  background-color: #3e7fb6 !important;
+    color: white !important;
   border-radius: 5px;
   width: 200px;
-  color:#fff !important;
-  border: 1px solid transparent;
-  transition: .2s linear;
+border: 1px solid white;
+  transition: .2s all;
+  
 }
 .btn__programar:hover{
-    background-color: #3e7fb6 !important;
+    background-color: #000 !important;
       color: white !important;
-      border: 1px solid white;
+     
 }
 .dropdown_list li a:hover {
   background-color: #3e7fb6 !important;
