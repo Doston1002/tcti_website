@@ -200,7 +200,7 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`http://tcti.uz/page/get/31`}
                           >
-                            {context[lang].entrantLinks.komissiaQabul}
+                            Umumiy uquv ma'lumotlari
                           </a>
                         </li>
                         <li className="my-2">
@@ -208,7 +208,7 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/xorijAbitur`}
                           >
-                            {context[lang].entrantLinks.first}
+                            bakalavr ta'lim
                           </a>
                         </li>
                         <li className="my-2">
@@ -216,7 +216,7 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/utishBall`}
                           >
-                            {context[lang].entrantLinks.second}
+                            magistratura ta'lim
                           </a>
                         </li>
                         <li className="my-2">
@@ -224,7 +224,7 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/TestFanlari`}
                           >
-                            {context[lang].entrantLinks.sixth}
+                            Doktarantura ta'lim
                           </a>
                         </li>
                         <li className="my-2">
@@ -232,19 +232,17 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/NotFound`}
                           >
-                            {context[lang].entrantLinks.nineth}
+                            Sirtqi ta'lim
                           </a>
                         </li>
-                        {subStudentSc.map((item) => (
-                          <li className="my-2">
-                            <a
-                              className="dropdown-item all_sc"
-                              href={`/page/get/${item.id}`}
-                            >
-                              {item[`section_name_${lang}`]}
-                            </a>
-                          </li>
-                        ))}
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`http://185.217.131.79/`}
+                          >
+                            Qo'shma ta'lim
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -466,57 +464,101 @@ function Header() {
                     </div>
                     <div className="col-7">
                       <ul className="dropdown_list d-flex flex-wrap">
-                        {allSc.map((item) => (
-                          <li className="my-2">
-                            <a
-                              className="dropdown-item all_sc"
-                              href={`/page/get/${item.id}`}
-                            >
-                              {item[`section_name_${lang}`]}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                      <ul className="dropdown_list d-flex flex-wrap">
-                        {context[lang].underCategory.first ? (
-                          <>
-                            <li className="my-2">
-                              <a
-                                className="dropdown-item all_sc"
-                                href={`/page/static/get/univer_haqida`}
-                              >
-                                {context[lang].generalInformation.first}
-                              </a>
-                            </li>
-                            <li className="my-2">
-                              <a
-                                className="dropdown-item all_sc"
-                                href={`/page/static/get/bizning_manzil`}
-                              >
-                                {context[lang].generalInformation.second}
-                              </a>
-                            </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            TCTI haqida
+                          </a>
+                        </li>
 
-                            <li className="my-2">
-                              <a
-                                className="dropdown-item all_sc"
-                                href={`/page/static/get/biz_bn_aloqa`}
-                              >
-                                {context[lang].generalInformation.fifth}
-                              </a>
-                            </li>
-                            <li className="my-2">
-                              <a
-                                className="dropdown-item all_sc"
-                                href={`/page/static/get/otm_ustavi`}
-                              >
-                                {context[lang].generalInformation.sixth}
-                              </a>
-                            </li>
-                          </>
-                        ) : (
-                          ""
-                        )}
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Rektorat
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Tuzilishi
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Institut kengashlari
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            TKTI QOSHIDAGI LITSEY
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Instititut loyihalari
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Faoliyat hujjatlari
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Xalqaro munosabatlar
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Bo'sh ish o'rinlari
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            Nashriyot uyi
+                          </a>
+                        </li>
+
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/NotFound`}
+                          >
+                            korrupsiyani oldini olish
+                          </a>
+                        </li>
                       </ul>
                     </div>
                   </div>
