@@ -8,6 +8,7 @@ import NewsAdmin from './pages/news_admin/news_admin'
 import AddNews from './pages/add_news/add_news'
 import EditNews from './pages/edit_news/edit_news'
 import PagesAdmin from './pages/sahifa/sahifa'
+// bu sinov 
 import AddPage from './pages/add_page/add_page'
 import EditPage from './pages/edit_page/edit_page'
 import AdminAnnouncements from './pages/announcements_admin/announcements_admin'
