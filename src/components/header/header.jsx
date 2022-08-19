@@ -483,9 +483,9 @@ function Header() {
                             <li className="my-2">
                               <a
                                 className="dropdown-item all_sc"
-                                href={`/page/static/get/univer_haqida`}
+                                href={`/page/static/get/InstitutAbout`}
                               >
-                                {context[lang].generalInformation.first}
+                                about
                               </a>
                             </li>
                             <li className="my-2">

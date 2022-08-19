@@ -18,6 +18,7 @@ function UniverHaqida() {
                 <div className="mainsss">
                     <div className="page_main">
                         <div className="unv_haqida_text">
+                            <h2></h2>
                             <h3>{context[lang].generalInformation.first}</h3>
                             <p>{context[lang].otmHaqida.first}</p><br />
                             <p>{context[lang].otmHaqida.second}</p><br />

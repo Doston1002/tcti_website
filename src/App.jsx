@@ -76,7 +76,7 @@ import PageStaticAkademikBakalavr from './pages/bakalavr/bakalavr'
 import PageStaticNoorganic from './pages/nmktf/nmktf'
 import PageStaticVinoUzum from './pages/vinoch/vinoch'
 import PageStaticQoshTalim from './pages/qush_talim/qush_talim'
-import PageStaticUniverHaqida from './pages/univer_haqida/univer_haqida'
+import InstitutAbout from "./pages/Instititut/about/InstitutAbout";
 import OtmIshReja from './pages/otm_ish_reja/otm_ish_reja'
 import BizBnAloqa from './pages/biz_bn_aloqa/biz_bn_aloqa'
 import BizningManzil from './pages/bizning_manzil/bizning_manzil'
@@ -103,14 +103,32 @@ function App() {
         <Route path="/admin/news_edit/:id" element={<EditNews />} />
         <Route path="/admin/page" element={<PagesAdmin />} />
         <Route path="/page/get/:id" element={<Page />} />
-        <Route path="/page/static/get/rectorat" element={<PageStaticRectorat />} />
-        <Route path="/page/static/get/oquvProrekt" element={<RectorPageOquv />} />
-        <Route path="/page/static/get/IlmiyProrektor" element={<RectorPageIlmiy />} />
-        <Route path="/page/static/get/MoliyaProrektor" element={<RectorPageMoliya />} />
-        <Route path="/page/static/get/RectorPageManav" element={<RectorPageManav />} />
+        <Route
+          path="/page/static/get/rectorat"
+          element={<PageStaticRectorat />}
+        />
+        <Route
+          path="/page/static/get/oquvProrekt"
+          element={<RectorPageOquv />}
+        />
+        <Route
+          path="/page/static/get/IlmiyProrektor"
+          element={<RectorPageIlmiy />}
+        />
+        <Route
+          path="/page/static/get/MoliyaProrektor"
+          element={<RectorPageMoliya />}
+        />
+        <Route
+          path="/page/static/get/RectorPageManav"
+          element={<RectorPageManav />}
+        />
         <Route path="/page/static/get/rector" element={<RectorPage />} />
         <Route path="/page/static/get/1" element={<PageStaticOne />} />
-        <Route path="/page/static/get/faculties" element={<PageStaticFaculty />} />
+        <Route
+          path="/page/static/get/faculties"
+          element={<PageStaticFaculty />}
+        />
         <Route path="/page/static/get/3" element={<PageStaticThree />} />
         <Route path="/page/static/get/4" element={<PageStaticFour />} />
         <Route path="/page/static/get/5" element={<PageStaticFive />} />
@@ -129,7 +147,7 @@ function App() {
         <Route path="/page/static/get/18" element={<PageStaticEighteen />} />
         <Route path="/page/static/get/19" element={<PageStaticNineteen />} />
         <Route path="/page/static/get/20" element={<PageStaticTwenty />} />
-       
+
         <Route path="/page/static/get/22" element={<PageStaticTwentyTwo />} />
         <Route path="/page/static/get/23" element={<PageStaticTwentyThree />} />
         <Route path="/page/static/get/24" element={<PageStaticTwentyFour />} />
@@ -139,34 +157,94 @@ function App() {
         <Route path="/page/static/get/28" element={<PageStaticTwentyEight />} />
         <Route path="/page/static/get/29" element={<PageStaticTwentyNigh />} />
         <Route path="/page/static/get/30" element={<PageStaticthirteenth />} />
-        <Route path="/page/static/get/31" element={<PageStaticthirteenthone />} />
-        <Route path="/page/static/get/32" element={<PageStaticthirteenthtwoo />} />
-        <Route path="/page/static/get/33" element={<PageStaticthirteenththree />} />
-        <Route path="/page/static/get/34" element={<PageStaticthirteenthfour />} />
-        <Route path="/page/static/get/35" element={<PageStaticthirteenthfive />} />
-        <Route path="/page/static/get/36" element={<PageStaticthirteenthsix />} />
-        <Route path="/page/static/get/37" element={<PageStaticthirteenthseven />} />
-        <Route path="/page/static/get/38" element={<PageStaticthirteentheight />} />
-        <Route path="/page/static/get/39" element={<PageStaticthirteenthnine />} />
-   
+        <Route
+          path="/page/static/get/31"
+          element={<PageStaticthirteenthone />}
+        />
+        <Route
+          path="/page/static/get/32"
+          element={<PageStaticthirteenthtwoo />}
+        />
+        <Route
+          path="/page/static/get/33"
+          element={<PageStaticthirteenththree />}
+        />
+        <Route
+          path="/page/static/get/34"
+          element={<PageStaticthirteenthfour />}
+        />
+        <Route
+          path="/page/static/get/35"
+          element={<PageStaticthirteenthfive />}
+        />
+        <Route
+          path="/page/static/get/36"
+          element={<PageStaticthirteenthsix />}
+        />
+        <Route
+          path="/page/static/get/37"
+          element={<PageStaticthirteenthseven />}
+        />
+        <Route
+          path="/page/static/get/38"
+          element={<PageStaticthirteentheight />}
+        />
+        <Route
+          path="/page/static/get/39"
+          element={<PageStaticthirteenthnine />}
+        />
+
         <Route path="/page/static/get/41" element={<PageStaticFourtyOne />} />
         <Route path="/page/static/get/42" element={<PageStaticFourtyTwo />} />
-        <Route path="/page/static/get/mktf" element={<PageStaticManagement />} />
-        <Route path="/page/static/get/yoshlar" element={<PageStaticYoshlarIttifoqi />} />
-        <Route path="/page/static/get/litsey" element={<PageStaticAkademiklitsey />} />
-        <Route path="/page/static/get/xorijAbitur" element={<XorijiyAbitur />} />
-        <Route path="/page/static/get/filial" element={<PageStaticAkademikFilial />} />
-        <Route path="/page/static/get/bakalavr" element={<PageStaticAkademikBakalavr />} />
-        <Route path="/page/static/get/nmktf" element={<PageStaticNoorganic />} />
-        <Route path="/page/static/get/vinoch" element={<PageStaticVinoUzum />} />
-        <Route path="/page/static/get/qush_talim" element={<PageStaticQoshTalim />} />
-        <Route path="/page/static/get/univer_haqida" element={<PageStaticUniverHaqida />} />
+        <Route
+          path="/page/static/get/mktf"
+          element={<PageStaticManagement />}
+        />
+        <Route
+          path="/page/static/get/yoshlar"
+          element={<PageStaticYoshlarIttifoqi />}
+        />
+        <Route
+          path="/page/static/get/litsey"
+          element={<PageStaticAkademiklitsey />}
+        />
+        <Route
+          path="/page/static/get/xorijAbitur"
+          element={<XorijiyAbitur />}
+        />
+        <Route
+          path="/page/static/get/filial"
+          element={<PageStaticAkademikFilial />}
+        />
+        <Route
+          path="/page/static/get/bakalavr"
+          element={<PageStaticAkademikBakalavr />}
+        />
+        <Route
+          path="/page/static/get/nmktf"
+          element={<PageStaticNoorganic />}
+        />
+        <Route
+          path="/page/static/get/vinoch"
+          element={<PageStaticVinoUzum />}
+        />
+        <Route
+          path="/page/static/get/qush_talim"
+          element={<PageStaticQoshTalim />}
+        />
+        <Route
+          path="/page/static/get/InstitutAbout"
+          element={<InstitutAbout />}
+        />
         <Route path="/page/static/get/otm_ish_reja" element={<OtmIshReja />} />
         <Route path="/page/static/get/biz_bn_aloqa" element={<BizBnAloqa />} />
         <Route path="/page/static/get/utishBall" element={<UtishBallar />} />
         <Route path="/page/static/get/DarsJadval" element={<DarsJadval />} />
         <Route path="/page/static/get/NotFound" element={<NotFound />} />
-        <Route path="/page/static/get/bizning_manzil" element={<BizningManzil />} />
+        <Route
+          path="/page/static/get/bizning_manzil"
+          element={<BizningManzil />}
+        />
         <Route path="/page/static/get/aloqa" element={<Aloqa />} />
         <Route path="/page/static/get/otm_ustavi" element={<OtmUstavi />} />
         <Route path="/page/static/get/TestFanlari" element={<TestFanlari />} />
@@ -176,14 +254,16 @@ function App() {
         <Route path="/admin/page/edit/:id" element={<EditPage />} />
         <Route path="/admin/announcement" element={<AdminAnnouncements />} />
         <Route path="/admin/announcement/add" element={<AddAnnouncements />} />
-        <Route path="/admin/announcements/edit/:id" element={<AnnouncementsEdit />} />
+        <Route
+          path="/admin/announcements/edit/:id"
+          element={<AnnouncementsEdit />}
+        />
         <Route path="/admin/upload" element={<Upload />} />
         <Route path="/admin/photo" element={<AdminPhoto />} />
         <Route path="/admin/videos" element={<AdminVideo />} />
         <Route path="/admin/files" element={<AdminFile />} />
         <Route path="/admin/statistic/all" element={<StatisticsPage />} />
         <Route path="/search-facultet/:question" element={<FilteredPage />} />
-
       </Routes>
     </BrowserRouter>
   );
