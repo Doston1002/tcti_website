@@ -198,7 +198,7 @@ function Header() {
                         <li className="my-2">
                           <a
                             className="dropdown-item all_sc"
-                            href={`/page/get/31`}
+                            href={`/page/umumiyoquv`}
                           >
                             Umumiy uquv ma'lumotlari
                           </a>

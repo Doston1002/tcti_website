@@ -89,6 +89,7 @@ import TestFanlari from './pages/TestFanlari/TestFanlari'
 import DarsJadval from './pages/DarsJadval/DarsJadval'
 import Symbols from './pages/symbols/symbols'
 import Bugalter from './pages/buxgalteriya/bugalter'
+import UmumiyOquv from './pages/qabul/umumiyoquv/umumiyoquv';
 
 function App() {
   return (
@@ -103,6 +104,7 @@ function App() {
         <Route path="/admin/news_edit/:id" element={<EditNews />} />
         <Route path="/admin/page" element={<PagesAdmin />} />
         <Route path="/page/get/:id" element={<Page />} />
+        <Route path="/page/umumiyoquv" element={< UmumiyOquv />} />
         <Route path="/page/static/get/rectorat" element={<PageStaticRectorat />} />
         <Route path="/page/static/get/oquvProrekt" element={<RectorPageOquv />} />
         <Route path="/page/static/get/IlmiyProrektor" element={<RectorPageIlmiy />} />

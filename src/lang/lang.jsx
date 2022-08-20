@@ -4128,6 +4128,7 @@ const content = {
       seventh: "Tashkent Institute of chemistry and Technology Charter",
     },
     entrantLinks: {
+      komissiaQabul: 'COMPOSITION OF THE ADMISSION COMMISSION',
       first: "For foreign applicants",
       second: "Passing points",
       third: "Admission quotas",
