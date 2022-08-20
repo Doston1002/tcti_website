@@ -1,0 +1,23 @@
+.bakalavr-container{
+    padding: 0 5%;
+}
+
+.about-bakalavr{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+    width: 100%;
+}
+
+.about-bakalavr >p{
+    text-align: justify;
+}
+
+.bakalavr-table{
+    width: 100%;
+    margin: 30px auto;
+    border-radius: 5px;
+}
+.bakalavr-table > tbody > tr >td{
+    font-weight: bold;
+}

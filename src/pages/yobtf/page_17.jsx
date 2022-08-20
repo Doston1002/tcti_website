@@ -1,7 +1,6 @@
 import Header from '../../components/header/header'
 import Footer from '../../components/footer/footer'
 import { useRef } from 'react'
-import ParticlesBg from 'particles-bg'
 import Image1 from '../../images/fakultet/Organika-dekan.jpg'
 import Image2 from '../../images/fakultet/Organika-manaviy-zam dekan.jpg'
 import Image3 from '../../images/fakultet/Organika-oquv-zam-dekan.jpg'

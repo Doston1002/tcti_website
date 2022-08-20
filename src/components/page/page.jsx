@@ -16,6 +16,8 @@ function PageOpened() {
                 setPage(data)
             });
     }, [])
+
+    
     return (
         <>
             <div className="container-fluid mt-5">
