@@ -1,22 +1,11 @@
-import { useState, useEffect, useContext } from 'react';
+import {  useContext } from 'react';
 import { Context as LanguageContext } from '../../../Context/Language';
 import context from '../../../lang/lang';
 import './umumiyoquv.css';
 
 function Umumiy() {
     const { lang } = useContext(LanguageContext);
-    const [page, setPage] = useState([])
-    // useEffect(() => {
-    //     fetch(`http://tcti.uz/api/sub_categories/get/${id}`)
-    //         .then((response) => {
-    //             return response.json();
-    //         })
-    //         .then((data) => {
-    //             setPage(data)
-    //         });
-    // }, [])
 
-    
     return (
         <>
             <div className="container-fluid mt-5">
