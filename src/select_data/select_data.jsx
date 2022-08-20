@@ -315,15 +315,14 @@ const data = {
 
 function render_select_data(data, child) {
     child.innerHTML = null
-    data.map((elem) => {
-        console.log(elem);
+    for(let elem of data){
         let newOption = document.createElement("option")
 
         newOption.textContent = elem.name
         newOption.setAttribute("value", elem.value)
 
         child.appendChild(newOption)
-    })
+    }
 }
 
 export { data, render_select_data };
