@@ -89,7 +89,7 @@ function Umumiy() {
                                     Kasbiy ta'lim - bu kasbiy malakani ta'minlaydigan fanlar. Ularga bakalavriat ( birinchi bosqich ) taʼlimini tamomlagan va Universitet tomonidan belgilangan boshqa talablarga javob beradigan shaxslar qabul qilinadi. Universitetda bitta kasbiy ta'lim dasturi mavjud - Pedagogika fanlari , uning hajmi 60 ta o'quv krediti bo'lib, o'qish muddati 1 yil. O'qishlar kasbiy ta'limning yakuniy loyihasi bilan yakunlanadi, bitiruvchilarga ta'lim muassasalarida ishlash huquqini beruvchi pedagog malakasi beriladi.
                               </div>
                         </ol>
-                  </div>
+                  </div> 
                 </div>
             </div>
         </>

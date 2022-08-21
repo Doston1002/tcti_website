@@ -93,6 +93,17 @@
     border-bottom: 8px solid #79849B !important;
 }
 
+.dropdown-right{
+    display: block;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid #79849B;
+    border-bottom: 5px solid transparent;
+    margin: 0 15px 0 20px;
+}
+
 .dropdown__secret__item{
     border: 1px solid darkgrey;
     padding: 15px;

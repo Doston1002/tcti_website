@@ -91,6 +91,7 @@ import Symbols from './pages/symbols/symbols'
 
 import Bugalter from './pages/buxgalteriya/bugalter'
 import UmumiyOquv from './pages/qabul/umumiyoquv/umumiyoquv';
+import BakalavrTalim from './pages/qabul/bakalavrtalim/bakalavrTalim';
 
 
 function App() {
@@ -108,6 +109,7 @@ function App() {
         <Route path="/admin/page" element={<PagesAdmin />} />
         <Route path="/page/get/:id" element={<Page />} />
         <Route path="/page/umumiyoquv" element={< UmumiyOquv />} />
+        <Route path="/page/bakalavr_talim" element={< BakalavrTalim />} />
         
         <Route path="/page/static/get/rectorat" element={<PageStaticRectorat />} />
         <Route path="/page/static/get/oquvProrekt" element={<RectorPageOquv />} />
