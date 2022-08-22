@@ -1,0 +1,26 @@
+.btn_qabul {
+    margin-left: 5px;  
+    padding: 12px 12px !important;
+    background-color: #6272f2;
+    color: #fff !important;
+  }
+.btn_qabul:hover{
+    background-color: #6272f2;
+}  
+
+.text-light{
+    color: black !important;
+}
+
+.dropdown-item:hover{
+    background: #6272f2 !important;
+    color: white !important;
+}
+
+.last-item{
+    width: 600px !important;
+}
+
+.content-width{
+    width: fit-content !important;
+}

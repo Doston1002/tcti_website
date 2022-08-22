@@ -1,0 +1,15 @@
+.header_rask_studijas {
+  width: 100%;
+  height: 164px;
+  background: #e1f1ec;
+  margin-top: 65px;
+}
+
+.header_rask_studijas_p {
+  color: #000 !important;
+  letter-spacing: 3.2px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+

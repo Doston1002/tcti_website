@@ -1,7 +1,14 @@
+import { Link } from "react-router-dom";
+import { useState, useEffect, useContext, useRef } from "react";
+
+import "./header.css";
+
 import Logo from "../../images/logo.png";
 import uzFlag from "../../images/uz.png";
 import ruFlag from "../../images/ru.png";
 import enFlag from "../../images/eng.png";
+import Symbols from "../../images/gerb.png";
+
 import Institute from "../../images/university.svg";
 import Structure from "../../images/structure.svg";
 import Entrant from "../../images/profile.svg";
@@ -12,11 +19,9 @@ import Interactive from "../../images/interactive.svg";
 import Corruption from "../../images/corruption.svg";
 import IconBurger from "../../images/burger_icon.svg";
 import IconClose from "../../images/close-menu.svg";
-import Symbols from "../../images/gerb.png";
-import { useState, useEffect, useContext, useRef } from "react";
+
 import { Context as LanguageContext } from "../../Context/Language";
 import context from "../../lang/lang";
-import { Link } from "react-router-dom";
 
 function Header() {
   const innerMenu = useRef();
@@ -293,10 +298,10 @@ function Header() {
                   {context[lang].header.fivth}
                 </a>
                 <ul
-                  className="dropdown-menu innerDropDown_5"
+                  className="dropdown-menu"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <div className="d-flex dropdown-menu p-2 innerDropDown">
+                  <div className="d-flex dropdown-menu p-2 innerDropDown last-item">
                     <div className="content_block col-5">
                       <div className="block_top d-flex">
                         <div className="block_icon">
@@ -318,7 +323,7 @@ function Header() {
                         </p>
                       </div>
                     </div>
-                    <div className="col-7">
+                    <div className="col-7 content-width">
                       <ul className="dropdown_list d-flex flex-wrap">
                         {workingSc.map((item) => (
                           <li className="my-2">
@@ -437,7 +442,7 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.seven}
+                  Institut
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div className="d-flex dropdown-menu innerDropDown_institut">
@@ -572,7 +577,7 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.twelve}
+                  Fan
                 </a>
                 <ul
                   class="dropdown-menu innerDropDown__research"
@@ -625,7 +630,7 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.eight}
+                  O`rganish
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div className="d-flex row dropdown-menu innerDropDown__student">
@@ -726,31 +731,10 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.nine}
+                  Fakultetlar
                 </a>
                 <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
                   <div className="d-flex dropdown-menu innerDropDown__fakultet">
-                    <div className="content_block col-5">
-                      <div className="block_top d-flex">
-                        <div className="block_icon">
-                          <img
-                            src={Students}
-                            className="nav-icons"
-                            alt="icon"
-                          />
-                        </div>
-                        <div className="block_name">
-                          <h4 className="text-light">
-                            {context[lang].header.fourth}
-                          </h4>
-                        </div>
-                      </div>
-                      <div className="block_bottom">
-                        <p className="block_text">
-                          {context[lang].navbarTexts.fourth}
-                        </p>
-                      </div>
-                    </div>
                     <div className="col-7">
                       <ul className="dropdown_list d-flex flex-wrap">
                         <li className="my-2">
@@ -758,7 +742,7 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/bakalavr`}
                           >
-                            {context[lang].Talabalar.first}
+                            Oziq ovqat mahsulotlari texnologiyasi fakulteti
                           </a>
                         </li>
                         <li className="my-2">
@@ -766,20 +750,55 @@ function Header() {
                             className="dropdown-item all_sc"
                             href={`/page/static/get/DarsJadval`}
                           >
-                            {context[lang].Talabalar.third}
+                            Yoqilg'i va organik birikmalar kimyoviy
+                            texnologiyasi fakulteti
                           </a>
                         </li>
-                        {studentSc.map((item) => (
-                          <li className="my-2">
-                            <a
-                              className="dropdown-item all_sc"
-                              href={`/page/get/${item.id}`}
-                            >
-                              {item[`section_name_${lang}`]}
-                            </a>
-                          </li>
-                        ))}
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/DarsJadval`}
+                          >
+                            Menejment va kasb ta'limi fakulteti
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/DarsJadval`}
+                          >
+                            Noorganik moddalar kimyoviy texnologiyasi fakulteti
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/DarsJadval`}
+                          >
+                            Vinochilik texnologiyasi va sanoat uzumchligi
+                            fakulteti
+                          </a>
+                        </li>
+                        <li className="my-2">
+                          <a
+                            className="dropdown-item all_sc"
+                            href={`/page/static/get/DarsJadval`}
+                          >
+                            Xorijiy oliy ta`lim muassasalari bilan hamkorlikdagi
+                            qo`shma ta`lim dasturlari
+                          </a>
+                        </li>
                       </ul>
+                    </div>
+                    <div className="content_block col-5">
+                      
+                      <div className="block_bottom">
+                        <p className="block_text">
+                          To'qqiz fakultet turli darajadagi 100 dan ortiq o'quv
+                          dasturlarini taklif qiladi
+                        </p>
+                        <button className="btn " >Fakultetlar</button>
+                      </div>
                     </div>
                   </div>
                 </ul>
@@ -792,7 +811,7 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.ten}
+                  Kutubxona
                 </a>
               </li>
               <li class="header_nav_li dropdown">
@@ -803,13 +822,13 @@ function Header() {
                   id="dropdownMenuLink"
                   aria-expanded="false"
                 >
-                  {context[lang].header.eleven}
+                  Contact
                 </a>
                 <ul
-                  class="dropdown-menu innerDropDown_6"
+                  class="dropdown-menu innerDropDown_6  last-item"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <div className="d-flex dropdown-menu p-2 innerDropDown">
+                  <div className="d-flex dropdown-menu p-2 innerDropDown ">
                     <div className="col-7">
                       <ul className="dropdown_list d-flex flex-wrap">
                         <li className="my-2">
