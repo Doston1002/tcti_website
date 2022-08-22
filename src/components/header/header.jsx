@@ -214,7 +214,7 @@ function Header() {
                         <li className="my-2">
                           <a
                             className="dropdown-item all_sc"
-                            href={`/page/static/get/utishBall`}
+                            href={`/page/magistratura_talim`}
                           >
                             magistratura ta'lim
                           </a>
