@@ -1,0 +1,46 @@
+.badroom__header{
+    border-color: coral;
+    position: relative;
+    margin-bottom: 5rem;
+        width: 100%;
+        height: 40vh;
+        border-radius: 5px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-clip: initial;
+    background-image: url('../../../images/students/badroom.png');
+}
+.badroom__header h1{
+    color:#000;
+    line-height: 15vh;
+        margin-left: 20px !important;
+}
+.badroom__header p{
+font-size: 2rem;
+
+
+    color:#000;
+   
+}
+
+.bedroom__info{
+    height: 100%;
+    width: 100%;
+    background-color:#f3f2ee;
+
+}
+.bedroom__info button{
+    font-weight: bold;
+    padding: 15px 0;
+    background-color:#f3f2ee;
+    display: block;
+   width: 100%;
+
+    color:#000;
+}
+.bedroom__info button:hover{
+background-color:#fff;
+}
+.bedroom__titte p, .bedroom__titte h4{
+    text-align: justify;
+}

@@ -1044,9 +1044,9 @@ const content = {
     },
     otmIshReja: {
       first:
-        "Toshkent kimyo-texnalogiyalar Institutining 2022-yil I yarim yilligi",
+        "2022-yil I yarim yilligi",
       second:
-        "Toshkent kimyo-texnalogiyalar Institutining 2021-yil II yarim yilligi",
+        "2021-yil II yarim yilligi",
     },
     rahbariyat: {
       first: "Rektor",

@@ -253,7 +253,7 @@ function Header() {
               <li className="header__nav dropdown">
                 <a
                   className="header__btn font-weight-bold dropdown-toggle"
-                  href=" "
+                  href={`/page/static/get/students`}
                   role="button"
                   id="dropdownMenuLink"
                   aria-expanded="false"
@@ -431,9 +431,9 @@ function Header() {
 
           <div className="header_nav">
             <ul>
-              <li class="header_nav_li dropdown">
+              <li className="header_nav_li dropdown">
                 <a
-                  class="btn font-weight-bold dropdown-toggle"
+                  className="btn font-weight-bold dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -441,7 +441,7 @@ function Header() {
                 >
                   {context[lang].header.seven}
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div className="d-flex dropdown-menu innerDropDown_institut">
                     <div className="content_block col-5">
                       <div className="block_top d-flex">
@@ -522,9 +522,9 @@ function Header() {
                   </div>
                 </ul>
               </li>
-              <li class="header_nav_li dropdown">
+              <li className="header_nav_li dropdown">
                 <a
-                  class="btn font-weight-bold   dropdown-toggle"
+                  className="btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -533,7 +533,7 @@ function Header() {
                   {context[lang].header.twelve}
                 </a>
                 <ul
-                  class="dropdown-menu innerDropDown__research"
+                  className="dropdown-menu innerDropDown__research"
                   aria-labelledby="dropdownMenuLink"
                 >
                   <div className="d-flex dropdown-menu p-2 innerDropDown">
@@ -575,9 +575,9 @@ function Header() {
                   </div>
                 </ul>
               </li>
-              <li class="header_nav_li dropdown ">
+              <li className="header_nav_li dropdown ">
                 <a
-                  class="btn font-weight-bold   dropdown-toggle"
+                  className="btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -585,7 +585,7 @@ function Header() {
                 >
                   {context[lang].header.eight}
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
                   <div className="d-flex row dropdown-menu innerDropDown__student">
                     <div className="col-7">
                       <ul className="dropdown_list d-flex flex-wrap">
@@ -676,9 +676,9 @@ function Header() {
                 </ul>
               </li>
 
-              <li class="header_nav_li dropdown">
+              <li className="header_nav_li dropdown">
                 <a
-                  class="btn font-weight-bold   dropdown-toggle"
+                  className="btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -686,7 +686,7 @@ function Header() {
                 >
                   {context[lang].header.nine}
                 </a>
-                <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                <ul className="dropdown-menu " aria-labelledby="dropdownMenuLink">
                   <div className="d-flex dropdown-menu innerDropDown__fakultet">
                     <div className="content_block col-5">
                       <div className="block_top d-flex">
@@ -742,9 +742,9 @@ function Header() {
                   </div>
                 </ul>
               </li>
-              <li class="header_nav_li dropdown">
+              <li className="header_nav_li dropdown">
                 <a
-                  class="btn font-weight-bold   dropdown-toggle"
+                  className="btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -753,9 +753,9 @@ function Header() {
                   {context[lang].header.ten}
                 </a>
               </li>
-              <li class="header_nav_li dropdown">
+              <li className="header_nav_li dropdown">
                 <a
-                  class="btn font-weight-bold   dropdown-toggle"
+                  className="btn font-weight-bold   dropdown-toggle"
                   href=" "
                   role="button"
                   id="dropdownMenuLink"
@@ -764,7 +764,7 @@ function Header() {
                   {context[lang].header.eleven}
                 </a>
                 <ul
-                  class="dropdown-menu innerDropDown_6"
+                  className="dropdown-menu innerDropDown_6"
                   aria-labelledby="dropdownMenuLink"
                 >
                   <div className="d-flex dropdown-menu p-2 innerDropDown">

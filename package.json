@@ -16,6 +16,8 @@
     "http-proxy-middleware": "^2.0.4",
     "particles-bg": "^2.5.5",
     "react": "^18.2.0",
+    "react-accessible-accordion": "^5.0.0",
+    "react-datetime": "^3.1.1",
     "react-dom": "^18.0.0",
     "react-helmet": "^6.1.0",
     "react-paginate": "^8.1.3",

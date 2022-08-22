@@ -16,7 +16,25 @@ const InstitutAbout = () => {
           <div className="mainsss">
             <div className="page_main">
               <div className="unv_haqida_text">
-                <img className="institutImg" src={InstititutImg} alt="" />
+                <div className="institutTitle">
+                  <h1 className="p-5">Toshkent kimyo texnologiya instituti</h1>
+                  <p className="p-5">
+                    TCTI xalqaro miqyosda raqobatbardosh, fanlararo, yangi bilim
+                    va innovatsiyalarni yaratuvchi va uzatuvchi texnologik
+                    universitetdir.
+                  </p>
+
+                  <div className="ish__reja">
+                    <a
+                      className="mx-3"
+                      download
+                      href="http://tkti.uz/uploads/22f0b8682e_1645524762.pdf"
+                    >
+                      {context[lang].otmIshReja.first}
+                    </a>
+                    <i className="fa-solid fa-file-pdf"></i>
+                  </div>
+                </div>
 
                 <h3>{context[lang].generalInformation.first}</h3>
                 <p>{context[lang].otmHaqida.first}</p>
@@ -44,7 +62,7 @@ const InstitutAbout = () => {
                 <div className="container">
                   <div className="row">
                     <div className="col-12">
-                      <div>
+                      <div className="rektorat">
                         <h2>Rektorat</h2>
                       </div>
                     </div>
@@ -52,7 +70,7 @@ const InstitutAbout = () => {
                   <div className="row">
                     <div className="col-4">
                       <div>
-                        <div>
+                        <div className="rectoratImg">
                           <img
                             src="https://ktu.edu/wp-content/uploads/2018/09/E.V.6-768x768.jpg"
                             alt=""

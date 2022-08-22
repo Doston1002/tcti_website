@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import HomePage from './pages/homePage/homePage'
 import NewsPage from './pages/newsPage/newsPage'
 import AnnouncementsPage from './pages/announcementsPage/announcement'
@@ -89,7 +89,13 @@ import TestFanlari from './pages/TestFanlari/TestFanlari'
 import DarsJadval from './pages/DarsJadval/DarsJadval'
 import Symbols from './pages/symbols/symbols'
 import Bugalter from './pages/buxgalteriya/bugalter'
-
+// students
+import Students from './pages/students/Students'
+import Bedroom from "./pages/students/bedroom/Bedroom";
+import Finance from "./pages/students/finance/Finance";
+import StudentInfo from "./pages/students/studentInfo/StudentInfo";
+import Startup from "./pages/students/startup/Startup";
+import Accessibility from "./pages/students/accessibility/Accessibility";
 function App() {
   return (
     <BrowserRouter>
@@ -236,6 +242,18 @@ function App() {
           path="/page/static/get/InstitutAbout"
           element={<InstitutAbout />}
         />
+
+        {/* students */}
+        <Route path="/page/static/get/students" element={<Students />} />
+        <Route path="/page/static/get/bedroom" element={<Bedroom />} />
+        <Route path="/page/static/get/finance" element={<Finance />} />
+        <Route path="/page/static/get/studentInfo" element={<StudentInfo />} />
+        <Route path="/page/static/get/startup" element={<Startup />} />
+        <Route
+          path="/page/static/get/accessibility"
+          element={<Accessibility />}
+        />
+
         <Route path="/page/static/get/otm_ish_reja" element={<OtmIshReja />} />
         <Route path="/page/static/get/biz_bn_aloqa" element={<BizBnAloqa />} />
         <Route path="/page/static/get/utishBall" element={<UtishBallar />} />

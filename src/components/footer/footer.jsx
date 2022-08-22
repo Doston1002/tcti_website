@@ -20,7 +20,7 @@ function Footer() {
               (998-71)244-79-18.
             </p>
             <p>
-              <i class="fa-solid fa-address-book"></i>
+              <i className="fa-solid fa-address-book"></i>
               {context[lang].footerText.third}(998-71)244-79-20.{" "}
               (998-71)244-79-17
             </p>
