@@ -25,7 +25,7 @@ const Students = () => {
                 <button>Ko'proq ma'lumot olish</button>
               </div>
             </div>
-            <div className="col-lg-12 col-md-12 col-sm-4 students__section">
+            <div className="col-lg-12 col-md-12 col-sm-12 students__section">
               <a href={`/page/static/get/finance`}>
                 <div className="students__section1">
                   <h2>Moliya</h2>
@@ -43,14 +43,18 @@ const Students = () => {
                   <h2>Moliya</h2>
                 </div>
               </a>
-              <div className="students__section4">
-                {" "}
-                <h2>Moliya</h2>
-              </div>
-              <div className="students__section5">
-                {" "}
-                <h2>Moliya</h2>
-              </div>
+              <a href={`/page/static/get/startup`}>
+                <div className="students__section4">
+                  {" "}
+                  <h2>Moliya</h2>
+                </div>
+              </a>
+              <a href={`/page/static/get/startup`}>
+                <div className="students__section5">
+                  {" "}
+                  <h2>Moliya</h2>
+                </div>
+              </a>
               <a href={`/page/static/get/studentInfo`}>
                 <div className="students__section6">
                   {" "}

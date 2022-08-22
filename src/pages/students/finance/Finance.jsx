@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import ParticlesBg from "particles-bg";
+
 import { Context as LanguageContext } from "../../../Context/Language";
 import context from "../../../lang/lang";
 import Header from "../../../components/header/header";
