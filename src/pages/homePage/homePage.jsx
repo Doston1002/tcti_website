@@ -11,7 +11,6 @@ import Footer from '../../components/footer/footer'
 function HomePage() {
   return (
     <div className='wrapped'>
-      
       <Header />
       <MainSlider />
       <Filter />

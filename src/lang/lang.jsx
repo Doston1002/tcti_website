@@ -1013,7 +1013,8 @@ const content = {
     },
 
     footerText: {
-      first: "Manzil: Toshkent sh. Navoiy ko’chasi, 32 uy, 100011",
+      first: "Manzil:",
+      firstAddress:"Toshkent sh. Navoiy ko’chasi, 32 uy, 100011",
       second: "Telefon:",
       third: "Faks",
       fourth: "E-mail:",
@@ -3061,7 +3062,8 @@ const content = {
     },
 
     footerText: {
-      first: "Адрес: г. Ташкент Ул. Навои, 32, 100011",
+      first: "Адрес:",
+      firstAddress:" г. Ташкент Ул. Навои, 32, 100011",
       second: "Телефон:",
       third: "Факс:",
       fourth: "Эл. почта:",
@@ -5053,7 +5055,8 @@ const content = {
       twelveth: "Transfer, reinstatement and expulsion of students",
     },
     footerText: {
-      first: "Address: Tashkent sh. Navoi Street, 32 House, 100011",
+      first: "Address:",
+      firstAddress:"Tashkent sh. Navoi Street, 32 House, 100011",
       second: "Tel:",
       third: "Fax",
       fourth: "E-mail:",

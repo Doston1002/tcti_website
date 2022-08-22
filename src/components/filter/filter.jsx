@@ -1,7 +1,11 @@
 import { useState, useEffect, useContext, useRef } from 'react';
+
+import "./filter.css"
+
 import { Context as LanguageContext } from '../../Context/Language';
 import context from '../../lang/lang';
 import {data, render_select_data} from '../../select_data/select_data'
+
 function Filter() {
     const select_2_home = useRef()
     const select_3_home = useRef()

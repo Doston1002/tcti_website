@@ -208,7 +208,7 @@ a {
 
   transition: all 0.5s ease;
 }
-.header__nav {
+ .header__nav {
   border-color: #393939;
   
   border-radius: 3px;
@@ -297,12 +297,6 @@ a {
   border-bottom: 2px solid dodgerblue;
 }
 
-.header_rask_studijas {
-  width: 100%;
-  height: 164px;
-  background: linear-gradient(111.67deg, rgba(48, 126, 199, 0.911) 27.45%, rgba(129, 211, 236, 0.623) 228.39%);
-  margin-top: 65px;
-}
 
 .header_rask_studijas_p {
   color: #fff !important;
@@ -1499,12 +1493,13 @@ a {
 }
 
 .button_search_linl {
-  border: 2px solid #fff !important;
-  color: #fff !important;
+  border: 2px solid #393939 !important;
+  color: #000 !important;
 }
 
-.button_search_linl:hover {
-  background: #3e8bcf !important;
+.button_search_linl:hover{
+  color: #fff !important;
+  background: #393939 !important;
 }
 
 .body_Naujienos_wrapper {
@@ -1722,9 +1717,9 @@ a {
 .select_2_home,
 .select_3_home {
   background-color: transparent !important;
-  color: #f1f1f1;
+  color: #393939;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #000;
   border-radius: 3px;
   outline: none;
   font-size: 18px;
@@ -1741,12 +1736,12 @@ a {
 .select_3_home option {
   margin: 10px 5px;
   min-height: 2em;
-  background: #337ab7 !important;
+  background: #f3f2ee !important;
   border: none;
-  color: #f1f1f1;
+  color: #393939;
   outline: none;
   box-shadow: none;
-  border-bottom: 2px solid #f1f1f1 !important;
+  border-bottom: 2px solid #393939 !important;
   font-size: 18px;
 }
 
@@ -3606,8 +3601,8 @@ dt {
 ===================*/
 .header__btn{
   padding: 12px 20px;
-border:1px solid black;
-color: #393939 !important;
+  border:1px solid black;
+  color: #393939 !important;
   border-radius: 3px;
   font-size: 15px;
 }
@@ -5956,16 +5951,12 @@ ul.show {
 .dropdown-menu {
   width: 850px;
   flex-wrap: wrap;
-  background-color: rgb(51 122 183 / 93%);
-}
-
-.innerDropDown li:hover {
-  background-color: rgb(51 122 183 / 93%) !important;
+  background-color: white;
 }
 
 .block_text {
   font-size: 11px;
-  color: #dee2e6;
+  color: black;
 }
 
 .block_name {
@@ -5980,7 +5971,7 @@ ul.show {
   font-size: 11px;
   text-overflow: ellipsis !important;
   overflow: hidden;
-  color: #0350d0 !important;
+  color: black !important;
 
 }
 
@@ -6000,32 +5991,27 @@ ul.show {
 
 .dropdown_list li a {
   margin: 0 10px;
-  background-color: white;
+  padding: 10px 12px;
   border-radius: 5px;
   width: 200px;
-  border: 1px solid transparent;
+  border: 1px solid black;
   transition: .2s linear;
 }
 .btn__programar{
   margin: 0 10px;
-  background-color: #3e7fb6 !important;
     color: white !important;
   border-radius: 5px;
   width: 200px;
-border: 1px solid white;
+border: 1px solid black;
   transition: .2s all;
   
 }
 .btn__programar:hover{
-    background-color: #000 !important;
+    background-color: #6272f2 !important;
       color: white !important;
      
 }
-.dropdown_list li a:hover {
-  background-color: #3e7fb6 !important;
-  color: white !important;
-  border: 1px solid white;
-}
+
 
 .block_top {
   margin: 20px 0;
@@ -6041,7 +6027,6 @@ border: 1px solid white;
 }
 
 .innerDropDown__fakultet {
-
   margin-left: -750px;
 }
 
@@ -6730,14 +6715,6 @@ button {
   text-indent: 3ch;
 }
 
-.btn_qabul {
-    margin-left: 5px;
-      
-      padding: 8px 12px !important;
-    
-  background-color: #337ab7;
-  color: #fff !important;
-}
 
 /* Accordion */
 
