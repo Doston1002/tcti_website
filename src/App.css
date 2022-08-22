@@ -6675,11 +6675,7 @@ td {
 /* Tabs */
 /* Style the tab */
 
-button {
-  border: none;
-  outline: none;
-  background-color: transparent;
-}
+
 
 .tab {
   margin-top: 30px;

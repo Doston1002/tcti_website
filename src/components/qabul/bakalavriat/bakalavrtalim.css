@@ -1,0 +1,141 @@
+.bakalavr__container{
+    box-shadow: 0px 10px 30px rgba(116, 67, 67, 0.2);
+    border-radius: 10px;
+    padding: 4%;
+}
+.accept__condition__menu{
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.accept__condition__menu >li{
+    width: 42%;
+    display: flex;
+    flex-direction: column;
+}
+.accept__condition{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    background: darkgrey;
+    border-bottom: 1px solid whitesmoke;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.active__condition{
+    background: rgb(224, 224, 132);
+}
+.accept__condition__item{
+    display: none;
+    border: 1px solid darkgrey;
+    padding: 15px;
+    text-align: justify;
+}
+
+.accept__condition__link{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    border: 3px solid gray;
+    border-radius: 10px;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white !important;
+}
+.accept__condition__link:hover{
+    background: white;
+    color: black !important;
+}
+.accept__condition__item__desk{
+    width: 55%;
+}
+.input__box{
+    position: relative;
+    width: 100%;
+}
+
+.input__box > input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgba(116, 67, 67, 0.2);
+    border-radius: 5px;
+    outline: none;
+}
+.input__box >span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    color: darkgrey;
+    opacity: 0.6;
+    transition: 0.5s;
+}
+
+.input__box input:valid ~ span, .input__box input:focus ~ span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(-10px);
+    padding: 0 10px;
+}
+
+.bakalavr__contact__container{
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.bakalavr__contact__form{
+    margin-top: 25px;
+    width: 47%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.bakalavr__contact__form > textarea{
+    width: 100%;
+    resize: vertical;
+    padding: 7px;
+}
+
+.bakalavr__contact__menu{
+    width: 47%;
+    padding: 0;
+}
+
+.bakalavr__contact__menu >div {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(116, 67, 67, 0.2);
+}
+
+@media only screen and (max-width: 900px){
+    .bakalavr__contact__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .bakalavr__contact__form, .bakalavr__contact__menu{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .accept__condition__item{
+        display: block;
+    }
+    .accept__condition__item__desk{
+        display: none;
+    }
+    .accept__condition__menu >li{
+        width: 100%;
+        padding: 2%;
+        margin: 0 auto;
+    }
+}
