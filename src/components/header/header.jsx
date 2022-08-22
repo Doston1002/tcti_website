@@ -203,7 +203,7 @@ function Header() {
                         <li className="my-2">
                           <a
                             className="dropdown-item all_sc"
-                            href={`http://tcti.uz/page/get/31`}
+                            href={`/page/umumiyoquv`}
                           >
                             Umumiy uquv ma'lumotlari
                           </a>
@@ -211,7 +211,7 @@ function Header() {
                         <li className="my-2">
                           <a
                             className="dropdown-item all_sc"
-                            href={`/page/static/get/xorijAbitur`}
+                            href={`/page/bakalavr_talim`}
                           >
                             bakalavr ta'lim
                           </a>
@@ -219,7 +219,7 @@ function Header() {
                         <li className="my-2">
                           <a
                             className="dropdown-item all_sc"
-                            href={`/page/static/get/utishBall`}
+                            href={`/page/magistratura_talim`}
                           >
                             magistratura ta'lim
                           </a>
@@ -256,7 +256,7 @@ function Header() {
               <li className="header__nav dropdown">
                 <a
                   className="header__btn font-weight-bold dropdown-toggle"
-                  href=" "
+                  href="/page/static/get/students"
                   role="button"
                   id="dropdownMenuLink"
                   aria-expanded="false"

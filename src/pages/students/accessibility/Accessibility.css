@@ -1,0 +1,12 @@
+.accessibility__header {
+    border-color: coral;
+    position: relative;
+    margin-bottom: 5rem;
+    width: 100%;
+    height: 40vh;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: initial;
+    background-image: url('../../../images/students/Studiju-tvarka-pavasario-semestre-1140x261.png');
+}
